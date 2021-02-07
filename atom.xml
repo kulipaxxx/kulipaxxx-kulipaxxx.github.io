@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Fly</title>
+  
+  
+  <link href="http://godcheng.cn/atom.xml" rel="self"/>
+  
+  <link href="http://godcheng.cn/"/>
+  <updated>2021-01-27T11:37:44.224Z</updated>
+  <id>http://godcheng.cn/</id>
+  
+  <author>
+    <name>Fly Wu</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Castle_game</title>
+    <link href="http://godcheng.cn/2021/01/27/castle-game/"/>
+    <id>http://godcheng.cn/2021/01/27/castle-game/</id>
+    <published>2021-01-27T11:30:37.000Z</published>
+    <updated>2021-01-27T11:37:44.224Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h1&gt;&lt;p&gt;此城堡游戏大概适合70后玩0.0，因为只有单纯的文字，没有图形化，可能会在后续加入图形吧。&lt;/p&gt;
+&lt;p&gt;游戏介绍：玩家需要输入go</summary>
+        
+      
+    
+    
+    
+    
+    <category term="game" scheme="http://godcheng.cn/tags/game/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://godcheng.cn/2021/01/24/test/"/>
+    <id>http://godcheng.cn/2021/01/24/test/</id>
+    <published>2021-01-24T05:33:19.968Z</published>
+    <updated>2021-01-22T13:52:27.316Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://imgchr.com/i/sIcjQx&quot;&gt;&lt;img src=&quot;https://s3.ax1x.com/2021/01/22/sIcjQx.jpg&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://godcheng.cn/2021/01/24/hello-world/"/>
+    <id>http://godcheng.cn/2021/01/24/hello-world/</id>
+    <published>2021-01-24T05:24:30.892Z</published>
+    <updated>2021-01-24T05:24:30.892Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>ArrayList集合</title>
+    <link href="http://godcheng.cn/2021/01/19/arraylist-ji-he/"/>
+    <id>http://godcheng.cn/2021/01/19/arraylist-ji-he/</id>
+    <published>2021-01-19T05:02:51.000Z</published>
+    <updated>2021-01-19T05:58:15.673Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;ArrayList介绍&quot;&gt;&lt;a href=&quot;#ArrayList介绍&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="javase" scheme="http://godcheng.cn/tags/javase/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>链表的学习</title>
+    <link href="http://godcheng.cn/2021/01/02/study-list/"/>
+    <id>http://godcheng.cn/2021/01/02/study-list/</id>
+    <published>2021-01-02T08:58:01.000Z</published>
+    <updated>2021-01-24T05:36:03.863Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;链表的学习与使用&quot;&gt;&lt;a href=&quot;#链表的学习与使用&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="数据结构" scheme="http://godcheng.cn/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+</feed>

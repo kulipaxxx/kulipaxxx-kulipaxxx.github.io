@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Castle_game</title>
+      <link href="2021/01/27/castle-game/"/>
+      <url>2021/01/27/castle-game/</url>
+      
+        <content type="html"><![CDATA[<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>此城堡游戏大概适合70后玩0.0，因为只有单纯的文字，没有图形化，可能会在后续加入图形吧。</p><p>游戏介绍：玩家需要输入go (direction) 来选择要去的方向，然后会进入一个个地区<br>究极无聊</p><p>但是看懂这个会对继承，框架，代码编写风格（低耦合）有一些帮助。</p><h2 id="贴代码"><a href="#贴代码" class="headerlink" title="贴代码"></a>贴代码</h2>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> game </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="2021/01/24/test/"/>
+      <url>2021/01/24/test/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://imgchr.com/i/sIcjQx"><img src="https://s3.ax1x.com/2021/01/22/sIcjQx.jpg" alt="sIcjQx.jpg"></a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="2021/01/24/hello-world/"/>
+      <url>2021/01/24/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ArrayList集合</title>
+      <link href="2021/01/19/arraylist-ji-he/"/>
+      <url>2021/01/19/arraylist-ji-he/</url>
+      
+        <content type="html"><![CDATA[<h1 id="ArrayList介绍"><a href="#ArrayList介绍" class="headerlink" title="ArrayList介绍"></a>ArrayList介绍</h1><p>ArrayList就是动态数组，用MSDN中的说法，就是Array的复杂版本，它提供了动态的增加和减少元素，实现了ICollection和IList接口，灵活的设置数组的大小等好处.<br><em>ArrayList</em>是一个其容量能够动态增长的动态数组。它继承了<em>AbstractList</em>，实现了<em>List、RandomAccess, Cloneable, java.io.Serializable</em>。<br>基本的<em>ArrayList</em>，长于随机访问元素，但是在<em>List</em>中间插入和移除元素时较慢。同时，<em>ArrayList</em>的操作不是线程安全的！一般在单线程中才使用<em>ArrayList</em>，而在多线程中一般使用<em>Vector</em>或者<em>CopyOnWriteArrayList</em>。</p><h2 id="ArratList集合的常用方法和遍历"><a href="#ArratList集合的常用方法和遍历" class="headerlink" title="ArratList集合的常用方法和遍历"></a>ArratList集合的常用方法和遍历</h2><pre><code>/*ArrayLis中的常用方法有public boolean add(E e)//向集合中添加元素,参数类型跟泛型一致public E get(int index)//从集合中获取元素，参数是索引编号，返回值就是对应位置的元素public E remove(int index)//从集合中删除指点索引的元素，返回值是删除的对应位置的元素public int size()//获取集合中元素的个数，返回值是集合中元素个数*/</code></pre><p><em>简单例子</em></p><pre><code>import java.util.ArrayList;public class ArrayListMethod &#123;    public static void main(String[] args) &#123;        ArrayList&lt;String&gt;list = new ArrayList&lt;&gt;();        System.out.println(list);        //像list中添加元素        boolean success = list.add(&quot;天神&quot;);        System.out.println(list);        System.out.println(&quot;添加是否成功&quot; + success);        list.add(&quot;韦小宝&quot;);        list.add(&quot;god&quot;);        System.out.println(list);        String name = list.get(2);        System.out.println(&quot;2号索引位置&quot; + name);        String WhoRemove = list.remove(2);        System.out.println(&quot;被删除的人是&quot; + WhoRemove);        System.out.println(list);        int size = list.size();        System.out.println(&quot;数组长度为&quot; + size);    &#125;&#125;</code></pre><p><em>集合遍历</em></p><pre><code>import java.util.ArrayList;import java.util.Random;public class ArrayListinput &#123;    public static void main(String[] args) &#123;        Random r = new Random();        ArrayList&lt;Integer&gt;list = new ArrayList&lt;&gt;();        for(int i = 0;i &lt; 6;i++)&#123;            int num = r.nextInt(33) + 1;            list.add(num);        &#125;        for (int i = 0; i &lt; list.size(); i++) &#123;            System.out.println(list.get(i));        &#125;    &#125;&#125;</code></pre><h3 id="ArrayList集合存储基本类型数据类型"><a href="#ArrayList集合存储基本类型数据类型" class="headerlink" title="ArrayList集合存储基本类型数据类型"></a>ArrayList集合存储基本类型数据类型</h3><p>如果希望向集合ArrayList中存储基本类型数据，必须使用基本类型对应的“包装类”。</p><p>基本类型        包装类型（引用类型，包装类位于java.Lang包下）<br>byte            Byte<br>short           Short<br>int             Integer 特殊<br>long            Long<br>float           Float<br>double          Double<br>char            Character   特殊<br>boolean         Boolean</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> javase </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>链表的学习</title>
+      <link href="2021/01/02/study-list/"/>
+      <url>2021/01/02/study-list/</url>
+      
+        <content type="html"><![CDATA[<h1 id="链表的学习与使用"><a href="#链表的学习与使用" class="headerlink" title="链表的学习与使用"></a>链表的学习与使用</h1><ol><li>链表是一种基础的数据结构，理解好他便于理解指针<br>下文是我自己对于链表的理解<br>有一些warning暂时还没解决</li><li>链表是一种物理存储单元上非连续、非顺序的存储结构，数据元素的逻辑顺序是通过链表中的指针链接次序实现的。<br>它不同于数组，<strong>数组在内存中是连续存放的。链表结构可以充分利用计算机内存空间，实现灵活的内存动态管理。</strong></li></ol><h2 id="正式学习"><a href="#正式学习" class="headerlink" title="正式学习"></a>正式学习</h2><ol><li><p>首先初始化链表，建议在学习之前看一下结构体和指针。</p><pre><code>typedef struct node &#123; int data;//数据域 struct node* next;//指针域&#125;Node;typedef struct node *LinkList;/*初始化链表*/int InitList(LinkList* L) &#123; (*L) = (LinkList)malloc(sizeof(Node)); if (!(*L))//检查malloc函数是否成功给L内存.     return ERROR; (*L)-&gt;next = NULL;//头指针指向为空 return OK;&#125;</code></pre></li><li><p>链表的头插法</p><pre><code>/*头插法添加元素*/void CreateListHead(LinkList* L,int n) &#123; LinkList p; int i; time_t t; srand((unsigned)time(&amp;t));//初始化随机种子 *L = (LinkList)malloc(sizeof(Node)); (*L)-&gt;next = NULL; if(*L)     (*L)-&gt;next = NULL; for (i = 0; i &lt;    n; i++) &#123;     p = (LinkList)malloc(sizeof(Node));     p-&gt;data = rand() % 100 + 1;//p-&gt;data赋值     p-&gt;next = (*L)-&gt;next;//L的后继赋值给P的后继     (*L)-&gt;next = p;//将L的后继指向p &#125;&#125;</code></pre></li><li><p>链表的尾插法</p><pre><code>/*尾插法插入链表*/void CreateListTai(LinkList* L,int n) &#123; LinkList r, p; int i; time_t t; srand((unsigned)time(&amp;t));//随机种子 *L = (LinkList)malloc(sizeof(Node)); (*L)-&gt;next = NULL; r = (*L);//r指向L的尾部 for (i = 0; i &lt; n; i++) &#123;     p = (LinkList)malloc(sizeof(Node));     p-&gt;data = rand() % 100 + 1;//p-&gt;data赋值     r-&gt;next = p;//r的后继指向p     r = p;//r始终指向尾部 &#125; r-&gt;next = NULL;//尾部的指针域指向NULL.&#125;</code></pre></li><li><p>链表的添加</p><pre><code>/*添加一个元素*/int ListInsert(LinkList* L,int i, int e) &#123; LinkList p,q; int j = 0; p = *L; while (p-&gt;next &amp;&amp; j &lt; i - 1) &#123;//找到第i个元素     ++j;     p = p-&gt;next; &#125; if (!(p-&gt;next) || j &gt; i - 1)//如果p-&gt;next为空则不能添加     return ERROR; else &#123;     q = (LinkList)malloc(sizeof(Node));     q-&gt;data = e;//q-&gt;data赋值     q-&gt;next = p-&gt;next;//p的后继赋给p的后继     p-&gt;next = q;//p的后继指向q,链接起来原本P的后继，并添加元素.     return OK; &#125;&#125;</code></pre></li><li><p>链表的删除</p><pre><code>/*删除元素*/int DeleteElement(LinkList* L, int i, int* e) &#123; LinkList p,q; int j = 0; p = *L; while (p-&gt;next &amp;&amp; j &lt; i-1) &#123;//找到要删除的第i个元素     p = p-&gt;next;     ++j; &#125; if (!(p-&gt;next) || j &gt; i-1)     return FALSE; else &#123;     q = p-&gt;next;     p-&gt;next = q-&gt;next;            /* 将q的后继赋值给p的后继 */     *e = q-&gt;data;               /* 将q结点中的数据给e */     free(q);                    /* 让系统回收此结点，释放内存 */     return TRUE; &#125;&#125;</code></pre></li></ol><h2 id="全部代码"><a href="#全部代码" class="headerlink" title="全部代码"></a>全部代码</h2><pre><code>/*链表功能：1.初始化链表            2.头插法链表            3.尾插法链表            4.遍历链表            5.删除链表            6.查找元素            7.删除元素            8.插入元素*/#include &lt;stdio.h&gt;#include &lt;stdlib.h&gt;#include &lt;time.h&gt;#define OK 1#define ERROR 0#define TRUE 1#define FALSE 0#define Max 10typedef struct node &#123;    int data;    struct node* next;&#125;Node;typedef struct node *LinkList;/*打印输出*/int output(int c) &#123;    printf(&quot;%d &quot;, c);    return OK;&#125;/*传递输出*/int ListTraverse(LinkList L) &#123;    LinkList p = L-&gt;next;    while (p) &#123;        output(p-&gt;data);        p = p-&gt;next;    &#125;    printf(&quot;\n&quot;);    return OK;&#125;/*初始化链表*/int InitList(LinkList* L) &#123;    (*L) = (LinkList)malloc(sizeof(Node));    if (!(*L))        return ERROR;    (*L)-&gt;next = NULL;    return OK;&#125;/*检查链表是否为空*/int ListEmpty(LinkList L) &#123;    if (L-&gt;next)        return FALSE;    else        return TRUE;&#125;/*删除链表*/int DeleteList(LinkList* L) &#123;    LinkList P,q;    P = (*L)-&gt;next;    while (P) &#123;        q = P-&gt;next;        free(P);        P = q;    &#125;    (*L)-&gt;next = NULL;    return OK;&#125;/*链表长度*/int ListLength(LinkList L) &#123;    LinkList P;    P = L-&gt;next;    int len=0;    while (P) &#123;        len++;        P = P-&gt;next;    &#125;    return len;&#125;/*查找元素*/int ListFind(LinkList L,int i,int *e) &#123;    LinkList p;    int j = 1;    p = L-&gt;next;    while (p &amp;&amp; j &lt; i) &#123;        p = p-&gt;next;        ++j;    &#125;    if (!p||j&gt;i) &#123;        return FALSE;    &#125;    else &#123;        *e = p-&gt;data;        return TRUE;    &#125; &#125;/*删除元素*/int DeleteElement(LinkList* L, int i, int* e) &#123;    LinkList p,q;    int j = 0;    p = *L;    while (p-&gt;next &amp;&amp; j &lt; i-1) &#123;        p = p-&gt;next;        ++j;    &#125;    if (!(p-&gt;next) || j &gt; i-1)        return FALSE;    else &#123;        q = p-&gt;next;        p-&gt;next = q-&gt;next;            /* 将q的后继赋值给p的后继 */        *e = q-&gt;data;               /* 将q结点中的数据给e */        free(q);                    /* 让系统回收此结点，释放内存 */        return TRUE;    &#125;&#125;/*添加一个元素*/int ListInsert(LinkList* L,int i, int e) &#123;    LinkList p,q;    int j = 0;    p = *L;    while (p-&gt;next &amp;&amp; j &lt; i - 1) &#123;        ++j;        p = p-&gt;next;    &#125;    if (!(p-&gt;next) || j &gt; i - 1)        return ERROR;    else &#123;        q = (LinkList)malloc(sizeof(Node));        q-&gt;data = e;        q-&gt;next = p-&gt;next;        p-&gt;next = q;        return OK;    &#125;&#125;/*头插法添加元素*/void CreateListHead(LinkList* L,int n) &#123;    LinkList p;    int i;    time_t t;    srand((unsigned)time(&amp;t));//初始化随机种子    *L = (LinkList)malloc(sizeof(Node));    (*L)-&gt;next = NULL;    if(*L)        (*L)-&gt;next = NULL;    for (i = 0; i &lt;    n; i++) &#123;        p = (LinkList)malloc(sizeof(Node));        p-&gt;data = rand() % 100 + 1;        p-&gt;next = (*L)-&gt;next;        (*L)-&gt;next = p;    &#125;&#125;/*尾插法插入链表*/void CreateListTai(LinkList* L,int n) &#123;    LinkList r, p;    int i;    time_t t;    srand((unsigned)time(&amp;t));    *L = (LinkList)malloc(sizeof(Node));    (*L)-&gt;next = NULL;    r = (*L);    for (i = 0; i &lt; n; i++) &#123;        p = (LinkList)malloc(sizeof(Node));        p-&gt;data = rand() % 100 + 1;        r-&gt;next = p;        r = p;    &#125;    r-&gt;next = NULL;&#125;void main()&#123;    LinkList L;    int n,num,e;    int flag;    int flue;    printf(&quot;input number:\n&quot;);    scanf_s(&quot;%d&quot;, &amp;n);    InitList(&amp;L);//初始化链表;    flag = ListEmpty(L);    if (flag)        printf(&quot;链表为空表\n&quot;);    else        printf(&quot;链表不为空\n&quot;);    CreateListHead(&amp;L, n);//头插法创建链表    ListTraverse(L);//遍历链表    printf(&quot;ListLength(L) = %d\n&quot;, ListLength(L));//链表长度    DeleteList(&amp;L);//删除链表    CreateListTai(&amp;L,n);//尾插法插入    ListTraverse(L);//遍历链表    printf(&quot;输入你要查找的第几号元素：\n&quot;);    scanf_s(&quot;%d&quot;, &amp;num);    flue = ListFind(L, num, &amp;e);    if (flue)        printf(&quot;找到了%d号元素:%d\n&quot;, num, e);    else        printf(&quot;没有找到你要求的%d号元素\n&quot;,num);    printf(&quot;输入你要删除的第几号元素：\n&quot;);    scanf_s(&quot;%d&quot;, &amp;num);    flue = DeleteElement(&amp;L, num, &amp;e);    if (flue)        printf(&quot;删除了%d号元素:%d\n&quot;, num, e);    else        printf(&quot;没有找到你要求删除的%d号元素\n&quot;, num);    ListTraverse(L);//遍历链表    printf(&quot;输入添加的元素及要求他添加到的位置：\n&quot;);    scanf_s(&quot;%d %d&quot;, &amp;e, &amp;num);    flue = ListInsert(&amp;L, num, e);    if (flue)        printf(&quot;添加了%d元素在%d位置上\n&quot;, e,num);    else        printf(&quot;添加失败\n&quot; );    ListTraverse(L);//遍历链表&#125;</code></pre><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p><strong>目前对于链表的理解比较浅，今天只是独立完成了一次链表，感觉有些感触，就写了一篇博客，第一次写博客，很多细节都不知道，希望理解.</strong></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 数据结构 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
